@@ -150,6 +150,7 @@
 				TargetAttributes = {
 					2BE75C8F1E06D6B000517368 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8XQREM6QC3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -364,11 +365,13 @@
 			baseConfigurationReference = 941008533F26EEF1BC8AFA79 /* Pods-Fontys-Dummys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XQREM6QC3;
 				INFOPLIST_FILE = "Fontys-Dummys/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fontys.sm.Fontys-Dummys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -377,11 +380,13 @@
 			baseConfigurationReference = 7A1FC0CCB521B08988CA981C /* Pods-Fontys-Dummys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XQREM6QC3;
 				INFOPLIST_FILE = "Fontys-Dummys/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fontys.sm.Fontys-Dummys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
