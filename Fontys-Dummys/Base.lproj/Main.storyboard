@@ -1,14 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Sign InVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignInVC" customModule="Fontys_Dummys" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +21,114 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUB-bR-hMA" customClass="FancyView" customModule="Fontys_Dummys" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="154"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fontys-logo" translatesAutoresizingMaskIntoConstraints="NO" id="2ie-Rn-oD1">
+                                        <rect key="frame" x="75" y="17" width="225" height="120"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.25882352941176467" green="0.20392156862745098" blue="0.37254901960784315" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="2ie-Rn-oD1" firstAttribute="leading" secondItem="VUB-bR-hMA" secondAttribute="leading" constant="75" id="Bdd-iU-SOm"/>
+                                    <constraint firstAttribute="bottom" secondItem="2ie-Rn-oD1" secondAttribute="bottom" constant="17" id="KqC-Td-NoV"/>
+                                    <constraint firstItem="2ie-Rn-oD1" firstAttribute="top" secondItem="VUB-bR-hMA" secondAttribute="top" constant="17" id="g0r-ol-B6f"/>
+                                    <constraint firstAttribute="trailing" secondItem="2ie-Rn-oD1" secondAttribute="trailing" constant="75" id="oFg-9z-vxa"/>
+                                    <constraint firstAttribute="height" constant="154" id="v8p-ty-2Jy"/>
+                                    <constraint firstItem="2ie-Rn-oD1" firstAttribute="centerY" secondItem="VUB-bR-hMA" secondAttribute="centerY" id="y1P-91-Uhl"/>
+                                    <constraint firstItem="2ie-Rn-oD1" firstAttribute="centerX" secondItem="VUB-bR-hMA" secondAttribute="centerX" id="zit-fd-Cry"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyg-g2-5L5">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Als je nog geen account hebt aangemaakt, wordt deze automatisch voor u aangemaakt" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UiC-YT-Qh8">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="75"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="14"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.69999999999999996" colorSpace="calibratedRGB"/>
+                                        <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.46666666666666667" green="0.38431372549019605" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UiC-YT-Qh8" secondAttribute="bottom" id="JZT-k4-02e"/>
+                                    <constraint firstItem="UiC-YT-Qh8" firstAttribute="top" secondItem="Vyg-g2-5L5" secondAttribute="top" id="LDO-7p-hOy"/>
+                                    <constraint firstAttribute="trailing" secondItem="UiC-YT-Qh8" secondAttribute="trailing" id="hiI-BK-JMk"/>
+                                    <constraint firstAttribute="height" constant="75" id="oMC-9x-BQI"/>
+                                    <constraint firstItem="UiC-YT-Qh8" firstAttribute="leading" secondItem="Vyg-g2-5L5" secondAttribute="leading" id="vbS-gN-UTa"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kies je inlog methode" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sbb-Od-hOb">
+                                <rect key="frame" x="0.0" y="174" width="375" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Phb-e2-dR2"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <color key="highlightedColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="calibratedRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yLP-Bl-7eJ" customClass="RoundButton" customModule="Fontys_Dummys" customModuleProvider="target">
+                                <rect key="frame" x="112" y="215" width="150" height="150"/>
+                                <color key="backgroundColor" red="0.35269182920455933" green="0.4413420557975769" blue="0.69439387321472168" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="HgW-7V-3qg"/>
+                                    <constraint firstAttribute="width" constant="150" id="may-ay-4zr"/>
+                                </constraints>
+                                <state key="normal" image="f"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="RdS-zN-NOI">
+                                <rect key="frame" x="46" y="415" width="282" height="105"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email adres" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Q4-GG-gCi" customClass="FancyField" customModule="Fontys_Dummys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="282" height="21"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7N-5e-7eX" customClass="FancyField" customModule="Fontys_Dummys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="36" width="282" height="21"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuO-80-Ggf" customClass="FancyBtn" customModule="Fontys_Dummys" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="282" height="33"/>
+                                        <color key="backgroundColor" red="0.33003589510917664" green="0.27399629354476929" blue="0.44795322418212891" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AppleSDGothicNeo-Light" family="Apple SD Gothic Neo" pointSize="17"/>
+                                        <state key="normal" title="Inloggen">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="sbb-Od-hOb" secondAttribute="trailing" id="4aF-rs-YuU"/>
+                            <constraint firstItem="RdS-zN-NOI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="5eQ-8Y-Tsg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Vyg-g2-5L5" secondAttribute="bottom" id="5vk-5t-FJJ"/>
+                            <constraint firstItem="VUB-bR-hMA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="8nn-4W-xjG"/>
+                            <constraint firstItem="sbb-Od-hOb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="K50-8w-fcf"/>
+                            <constraint firstItem="yLP-Bl-7eJ" firstAttribute="top" secondItem="sbb-Od-hOb" secondAttribute="bottom" constant="20" id="KbZ-Pv-zcr"/>
+                            <constraint firstItem="VUB-bR-hMA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="P7x-rg-jCt"/>
+                            <constraint firstItem="sbb-Od-hOb" firstAttribute="top" secondItem="VUB-bR-hMA" secondAttribute="bottom" constant="20" id="aFv-9E-kBW"/>
+                            <constraint firstItem="RdS-zN-NOI" firstAttribute="top" secondItem="yLP-Bl-7eJ" secondAttribute="bottom" constant="50" id="dVS-8B-muY"/>
+                            <constraint firstItem="yLP-Bl-7eJ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eZk-cM-1RY"/>
+                            <constraint firstItem="RdS-zN-NOI" firstAttribute="centerX" secondItem="Vyg-g2-5L5" secondAttribute="centerX" id="mLt-Ds-0i3"/>
+                            <constraint firstItem="Vyg-g2-5L5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="odN-lI-Vdf"/>
+                            <constraint firstAttribute="trailing" secondItem="Vyg-g2-5L5" secondAttribute="trailing" id="w9g-j0-ek9"/>
+                            <constraint firstAttribute="trailing" secondItem="VUB-bR-hMA" secondAttribute="trailing" id="yM9-03-f9y"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="f" width="352" height="328"/>
+        <image name="fontys-logo" width="447" height="236"/>
+    </resources>
 </document>

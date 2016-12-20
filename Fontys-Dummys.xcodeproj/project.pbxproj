@@ -7,21 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B3083D51E095DCE0041135D /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3083D41E095DCE0041135D /* FancyView.swift */; };
+		2B3083D81E095E7D0041135D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3083D71E095E7D0041135D /* Constants.swift */; };
+		2B3083DA1E0960F50041135D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3083D91E0960F50041135D /* RoundButton.swift */; };
+		2B3083DC1E0964E30041135D /* FancyField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3083DB1E0964E30041135D /* FancyField.swift */; };
+		2B3083DE1E0967390041135D /* FancyBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3083DD1E0967390041135D /* FancyBtn.swift */; };
 		2BE75C941E06D6B100517368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE75C931E06D6B100517368 /* AppDelegate.swift */; };
-		2BE75C961E06D6B100517368 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE75C951E06D6B100517368 /* ViewController.swift */; };
+		2BE75C961E06D6B100517368 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE75C951E06D6B100517368 /* SignInVC.swift */; };
 		2BE75C991E06D6B100517368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE75C971E06D6B100517368 /* Main.storyboard */; };
 		2BE75C9B1E06D6B100517368 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE75C9A1E06D6B100517368 /* Assets.xcassets */; };
 		2BE75C9E1E06D6B100517368 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE75C9C1E06D6B100517368 /* LaunchScreen.storyboard */; };
+		2BE75CA61E06D7C200517368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2BE75CA51E06D7C200517368 /* GoogleService-Info.plist */; };
+		48C719FE261747AEBECA0892 /* Pods_Fontys_Dummys.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FFDBD04772CD9C5F36A0C9A /* Pods_Fontys_Dummys.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2B3083D41E095DCE0041135D /* FancyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
+		2B3083D71E095E7D0041135D /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2B3083D91E0960F50041135D /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		2B3083DB1E0964E30041135D /* FancyField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyField.swift; sourceTree = "<group>"; };
+		2B3083DD1E0967390041135D /* FancyBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FancyBtn.swift; sourceTree = "<group>"; };
 		2BE75C901E06D6B100517368 /* Fontys-Dummys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fontys-Dummys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE75C931E06D6B100517368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2BE75C951E06D6B100517368 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BE75C951E06D6B100517368 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
 		2BE75C981E06D6B100517368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE75C9A1E06D6B100517368 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE75C9D1E06D6B100517368 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE75C9F1E06D6B100517368 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE75CA51E06D7C200517368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5FFDBD04772CD9C5F36A0C9A /* Pods_Fontys_Dummys.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fontys_Dummys.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A1FC0CCB521B08988CA981C /* Pods-Fontys-Dummys.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fontys-Dummys.release.xcconfig"; path = "Pods/Target Support Files/Pods-Fontys-Dummys/Pods-Fontys-Dummys.release.xcconfig"; sourceTree = "<group>"; };
+		941008533F26EEF1BC8AFA79 /* Pods-Fontys-Dummys.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fontys-Dummys.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Fontys-Dummys/Pods-Fontys-Dummys.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +45,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48C719FE261747AEBECA0892 /* Pods_Fontys_Dummys.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B3083D61E095E5E0041135D /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				2B3083D71E095E7D0041135D /* Constants.swift */,
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
 		2BE75C871E06D6B000517368 = {
 			isa = PBXGroup;
 			children = (
 				2BE75C921E06D6B100517368 /* Fontys-Dummys */,
 				2BE75C911E06D6B100517368 /* Products */,
+				C900B02DAAD9E67FDE18F961 /* Pods */,
+				47D6DD324D0B7DB84D84D364 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +81,61 @@
 		2BE75C921E06D6B100517368 /* Fontys-Dummys */ = {
 			isa = PBXGroup;
 			children = (
+				2B3083D61E095E5E0041135D /* Util */,
+				2BE75CA71E06DAFA00517368 /* Model */,
+				2BE75CA91E06DB1600517368 /* Controller */,
+				2BE75CA81E06DB0900517368 /* View */,
 				2BE75C931E06D6B100517368 /* AppDelegate.swift */,
-				2BE75C951E06D6B100517368 /* ViewController.swift */,
 				2BE75C971E06D6B100517368 /* Main.storyboard */,
 				2BE75C9A1E06D6B100517368 /* Assets.xcassets */,
 				2BE75C9C1E06D6B100517368 /* LaunchScreen.storyboard */,
 				2BE75C9F1E06D6B100517368 /* Info.plist */,
+				2BE75CA51E06D7C200517368 /* GoogleService-Info.plist */,
 			);
 			path = "Fontys-Dummys";
+			sourceTree = "<group>";
+		};
+		2BE75CA71E06DAFA00517368 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		2BE75CA81E06DB0900517368 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2B3083D41E095DCE0041135D /* FancyView.swift */,
+				2B3083DB1E0964E30041135D /* FancyField.swift */,
+				2B3083DD1E0967390041135D /* FancyBtn.swift */,
+				2B3083D91E0960F50041135D /* RoundButton.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		2BE75CA91E06DB1600517368 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2BE75C951E06D6B100517368 /* SignInVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		47D6DD324D0B7DB84D84D364 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FFDBD04772CD9C5F36A0C9A /* Pods_Fontys_Dummys.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C900B02DAAD9E67FDE18F961 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				941008533F26EEF1BC8AFA79 /* Pods-Fontys-Dummys.debug.xcconfig */,
+				7A1FC0CCB521B08988CA981C /* Pods-Fontys-Dummys.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +145,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2BE75CA21E06D6B100517368 /* Build configuration list for PBXNativeTarget "Fontys-Dummys" */;
 			buildPhases = (
+				72BC2AB37A7D0F8EFCF6AA0B /* [CP] Check Pods Manifest.lock */,
 				2BE75C8C1E06D6B000517368 /* Sources */,
 				2BE75C8D1E06D6B000517368 /* Frameworks */,
 				2BE75C8E1E06D6B000517368 /* Resources */,
+				058DE88089B5373E6EBF7EB6 /* [CP] Embed Pods Frameworks */,
+				B43593B02C421A7CECC434D8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +173,7 @@
 				TargetAttributes = {
 					2BE75C8F1E06D6B000517368 = {
 						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 8XQREM6QC3;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +202,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE75C9E1E06D6B100517368 /* LaunchScreen.storyboard in Resources */,
+				2BE75CA61E06D7C200517368 /* GoogleService-Info.plist in Resources */,
 				2BE75C9B1E06D6B100517368 /* Assets.xcassets in Resources */,
 				2BE75C991E06D6B100517368 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +210,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		058DE88089B5373E6EBF7EB6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fontys-Dummys/Pods-Fontys-Dummys-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72BC2AB37A7D0F8EFCF6AA0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B43593B02C421A7CECC434D8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Fontys-Dummys/Pods-Fontys-Dummys-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BE75C8C1E06D6B000517368 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE75C961E06D6B100517368 /* ViewController.swift in Sources */,
+				2B3083DC1E0964E30041135D /* FancyField.swift in Sources */,
+				2BE75C961E06D6B100517368 /* SignInVC.swift in Sources */,
+				2B3083DA1E0960F50041135D /* RoundButton.swift in Sources */,
 				2BE75C941E06D6B100517368 /* AppDelegate.swift in Sources */,
+				2B3083D51E095DCE0041135D /* FancyView.swift in Sources */,
+				2B3083D81E095E7D0041135D /* Constants.swift in Sources */,
+				2B3083DE1E0967390041135D /* FancyBtn.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,25 +390,31 @@
 		};
 		2BE75CA31E06D6B100517368 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 941008533F26EEF1BC8AFA79 /* Pods-Fontys-Dummys.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XQREM6QC3;
 				INFOPLIST_FILE = "Fontys-Dummys/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fontys.sm.Fontys-Dummys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		2BE75CA41E06D6B100517368 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1FC0CCB521B08988CA981C /* Pods-Fontys-Dummys.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8XQREM6QC3;
 				INFOPLIST_FILE = "Fontys-Dummys/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "edu.fontys.sm.Fontys-Dummys";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -299,6 +437,7 @@
 				2BE75CA41E06D6B100517368 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
