@@ -87,13 +87,13 @@
                                         <rect key="frame" x="0.0" y="0.0" width="282" height="21"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                     </textField>
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Wachtwoord" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T7N-5e-7eX" customClass="FancyField" customModule="Fontys_Dummys" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="36" width="282" height="21"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="0.87" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VuO-80-Ggf" customClass="FancyBtn" customModule="Fontys_Dummys" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="72" width="282" height="33"/>
@@ -102,6 +102,9 @@
                                         <state key="normal" title="Inloggen">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="signInTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2K-dr-hNX"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -124,6 +127,10 @@
                             <constraint firstAttribute="trailing" secondItem="VUB-bR-hMA" secondAttribute="trailing" id="yM9-03-f9y"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="emailField" destination="1Q4-GG-gCi" id="gna-wk-IFJ"/>
+                        <outlet property="pwdField" destination="T7N-5e-7eX" id="wU2-1W-ONb"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
