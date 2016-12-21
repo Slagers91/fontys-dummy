@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RoundButton: UIButton {
+class RoundBtn: UIButton {
 
     override func awakeFromNib() {
         super.awakeFromNib()
