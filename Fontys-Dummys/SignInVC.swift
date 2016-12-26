@@ -10,6 +10,7 @@ import UIKit
 import FBSDKCoreKit
 import FBSDKLoginKit
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
     
@@ -20,15 +21,20 @@ class SignInVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    //Moet in de viewDidAppear omdat viewDidLoad geen performSegue kan uitvoeren
+    override func viewDidAppear(_ animated: Bool) {
+        //Als je al een keer bent ingelogd ga meteen door naar de overzichtpagina
+        if let _ = KeychainWrapper.standard.string(forKey: (KEY_UID)) {
+            print("RUUD: ID found in keychain")
+            performSegue(withIdentifier: "goToFeed", sender: nil)
+        }
     }
 
     
+
+    //Facebook knop
     @IBAction func facebookBtnTapped(_ sender: Any) {
     
     
@@ -57,6 +63,9 @@ class SignInVC: UIViewController {
                 print("RUUD: Unable to authenticate with Firebase - \(error)")
             } else {
                 print("RUUD: Succesfully authenticated with Firebase")
+                if let user = user {
+                    self.completeSignIn(id: user.uid)
+                }
             }
         })
     }
@@ -67,20 +76,39 @@ class SignInVC: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: email, password: pwd, completion: { (user, error) in
                 if error == nil {
                     print("RUUD: Email user authenticated with Firebase")
+                    if let user = user {
+                        self.completeSignIn(id: user.uid)
+                    }
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: pwd, completion: { (user, error) in
                         if error != nil {
                             print("RUUD: Unable to authenticate with Firebase using email")
                         } else {
                             print("RUUD: Succesfully authenticated with Firebase using email")
+                            if let user = user {
+                                self.completeSignIn(id: user.uid)
+                            }
                         }
                     })
                 }
-            
-        })
-        
+            })
+        }
     }
+
     
+    func completeSignIn(id: String) {
+        let keychainResult = KeychainWrapper.standard.set(id, forKey: KEY_UID)
+        print("RUUD: Data saved to keychain \(keychainResult)")
+        performSegue(withIdentifier: "goToFeed", sender: nil)
+    
+//        func completeSignIn(id: String, userData: Dictionary<String, String>) {
+//            DataService.ds.createFirbaseDBUser(uid: id, userdata:  userdata)
+//            let keychainResult = KeychainWrapper.defaultKeychainWrapper.set(id, forkey: KEY_UID)
+//            performSegue(withIdentifier: goToFeed, sender: nil)
+//        }
+
+
+    }
 }
-}
+
 
