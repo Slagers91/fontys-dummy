@@ -15,6 +15,7 @@
 		2B4528431E0A964A0093153D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2B4528421E0A964A0093153D /* GoogleService-Info.plist */; };
 		2BD0C49E1E11166A0044917E /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0C49D1E11166A0044917E /* FeedVC.swift */; };
 		2BD0C4A01E1129FE0044917E /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0C49F1E1129FE0044917E /* CircleView.swift */; };
+		2BD0C4A21E1139AC0044917E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BD0C4A11E1139AC0044917E /* PostCell.swift */; };
 		2BE75C941E06D6B100517368 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE75C931E06D6B100517368 /* AppDelegate.swift */; };
 		2BE75C961E06D6B100517368 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE75C951E06D6B100517368 /* SignInVC.swift */; };
 		2BE75C991E06D6B100517368 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE75C971E06D6B100517368 /* Main.storyboard */; };
@@ -33,6 +34,7 @@
 		2B7DA7531E09AE5900428186 /* Fontys-Dummys.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Fontys-Dummys.entitlements"; sourceTree = "<group>"; };
 		2BD0C49D1E11166A0044917E /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		2BD0C49F1E1129FE0044917E /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		2BD0C4A11E1139AC0044917E /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		2BE75C901E06D6B100517368 /* Fontys-Dummys.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fontys-Dummys.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE75C931E06D6B100517368 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE75C951E06D6B100517368 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				2B3083DD1E0967390041135D /* FancyBtn.swift */,
 				2B3083D91E0960F50041135D /* RoundBtn.swift */,
 				2BD0C49F1E1129FE0044917E /* CircleView.swift */,
+				2BD0C4A11E1139AC0044917E /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				2B3083D51E095DCE0041135D /* FancyView.swift in Sources */,
 				2B3083D81E095E7D0041135D /* Constants.swift in Sources */,
 				2B3083DE1E0967390041135D /* FancyBtn.swift in Sources */,
+				2BD0C4A21E1139AC0044917E /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
