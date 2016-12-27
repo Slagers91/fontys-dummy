@@ -156,13 +156,17 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="DiB-oh-VbO">
                                         <rect key="frame" x="8" y="8" width="327" height="49"/>
                                         <subviews>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="BBE-AJ-ewf" customClass="CircleView" customModule="Fontys_Dummys" customModuleProvider="target">
+                                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" translatesAutoresizingMaskIntoConstraints="NO" id="BBE-AJ-ewf" customClass="CircleView" customModule="Fontys_Dummys" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="49" height="49"/>
                                                 <color key="backgroundColor" red="0.26322102546691895" green="0.22010904550552368" blue="0.35676956176757812" alpha="0.79559075342465757" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <gestureRecognizers/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="49" id="fw2-fx-Fus"/>
                                                     <constraint firstAttribute="height" constant="49" id="nny-iP-iMU"/>
                                                 </constraints>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="9gb-5u-n2Q" appends="YES" id="wfh-Nj-b8S"/>
+                                                </connections>
                                             </imageView>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Voeg beschrijving toe" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3RJ-TQ-Yy7" customClass="FancyField" customModule="Fontys_Dummys" customModuleProvider="target">
                                                 <rect key="frame" x="59" y="13.5" width="209" height="22"/>
@@ -341,6 +345,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="imageAdd" destination="BBE-AJ-ewf" id="4y1-54-cE3"/>
                         <outlet property="tableView" destination="9Ia-IU-7OI" id="lIx-co-RfV"/>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="goToSignIn" id="KOc-AN-esE"/>
                     </connections>
@@ -349,6 +354,11 @@
                 <tapGestureRecognizer id="GBS-vi-OER">
                     <connections>
                         <action selector="signInTapped:" destination="ID1-k1-gsl" id="vlx-xg-hdU"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="9gb-5u-n2Q">
+                    <connections>
+                        <action selector="addImageTapped:" destination="ID1-k1-gsl" id="S5U-1h-w4h"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
