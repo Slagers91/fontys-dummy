@@ -37,7 +37,9 @@ class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
 
     //Als je op uitloggen klikt, gooi de gegevens uit de keychainwrapper zodat je opnieuw kan inloggen
+    
     @IBAction func signInTapped(_ sender: Any) {
+    
         let keychainResult = KeychainWrapper.standard.remove(key: (KEY_UID))
         print("RUUD: ID removed from keychain \(keychainResult)")
         try! FIRAuth.auth()?.signOut()
