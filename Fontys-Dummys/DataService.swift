@@ -14,6 +14,7 @@ let DB_BASE = FIRDatabase.database().reference()
 
 class DataService {
     
+    //Dit schrijft naar Firebase
     static let ds = DataService()
     
     private var _REF_BASE = DB_BASE
