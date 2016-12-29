@@ -25,7 +25,7 @@ class DataService {
     private var _REF_USERS = DB_BASE.child("users")
     
     //Opslag verwijzing
-    private var _REF_POSTS_IMAGES = STORAGE_BASE.child("posts-pics")
+    private var _REF_POSTS_IMAGES = STORAGE_BASE.child("post-pics")
     
     var REF_BASE: FIRDatabaseReference {
         return _REF_BASE
